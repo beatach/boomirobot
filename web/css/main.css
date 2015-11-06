@@ -1,0 +1,215 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,500,700,900,300,400italic);
+/* line 1, ../sass/base/_base.scss */
+html {
+  font-size: 18px;
+}
+
+@media (max-width: 400px) {
+  /* line 6, ../sass/base/_base.scss */
+  html {
+    font-size: 16px;
+  }
+}
+@media (max-width: 900px) {
+  /* line 10, ../sass/base/_base.scss */
+  html {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1280px) {
+  /* line 14, ../sass/base/_base.scss */
+  html {
+    font-size: 20px;
+  }
+}
+/* line 17, ../sass/base/_base.scss */
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  font-smoothing: subpixel-antialiased;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+/* line 28, ../sass/base/_base.scss */
+a {
+  transition: all 0.2s ease-out;
+}
+
+/* line 32, ../sass/base/_base.scss */
+.row {
+  margin: 0!important;
+}
+
+/* line 1, ../sass/base/_custom.scss */
+.container-fluid {
+  padding: 0!important;
+}
+
+/* line 5, ../sass/base/_custom.scss */
+.video-container {
+  width: 800px;
+  height: 100vh;
+}
+
+/* line 9, ../sass/base/_custom.scss */
+#video {
+  border: transparent;
+  width: 1000px;
+  height: inherit;
+  -ms-zoom: 0.75;
+  -moz-transform: scale(0.75);
+  -moz-transform-origin: 0 0;
+  -o-transform: scale(0.75);
+  -o-transform-origin: 0 0;
+  -webkit-transform: scale(0.75);
+  -webkit-transform-origin: 0 0;
+}
+
+/* line 22, ../sass/base/_custom.scss */
+#controls {
+  border-left: solid 2px #dae5e8;
+  position: absolute;
+  top: 0;
+  left: 800px;
+  right: 0;
+  bottom: 0;
+  padding: 12px;
+}
+/* line 31, ../sass/base/_custom.scss */
+#controls .logo {
+  border-bottom: solid 2px #dae5e8;
+  padding-bottom: 8px;
+}
+/* line 36, ../sass/base/_custom.scss */
+#controls .header-controls {
+  padding: 12px 0;
+  width: 100%;
+  display: block;
+}
+/* line 41, ../sass/base/_custom.scss */
+#controls .header-controls .btn-group {
+  width: 100%;
+}
+/* line 45, ../sass/base/_custom.scss */
+#controls .header-controls .fa-wifi {
+  color: #6bacde;
+}
+/* line 49, ../sass/base/_custom.scss */
+#controls .header-controls .fa-plug {
+  color: #f2af00;
+}
+/* line 54, ../sass/base/_custom.scss */
+#controls .speed {
+  position: absolute;
+  top: 300px;
+  left: 0;
+  right: 0;
+}
+/* line 60, ../sass/base/_custom.scss */
+#controls .speed input {
+  display: block;
+  width: 200px;
+  margin: 0 auto;
+  padding: 8px 0;
+  transform: rotate(90deg);
+}
+/* line 70, ../sass/base/_custom.scss */
+#controls #speed-controls {
+  position: absolute;
+  top: 200px;
+  left: 0;
+  right: 0;
+  display: block;
+  padding: 24px 0;
+  text-align: center;
+}
+/* line 79, ../sass/base/_custom.scss */
+#controls #speed-controls a {
+  font-size: 36px;
+  cursor: pointer;
+}
+/* line 83, ../sass/base/_custom.scss */
+#controls #speed-controls a .fa-caret-square-o-up {
+  color: #c1d82e;
+}
+/* line 86, ../sass/base/_custom.scss */
+#controls #speed-controls a .fa-caret-square-o-up:hover {
+  color: #aec324;
+}
+/* line 91, ../sass/base/_custom.scss */
+#controls #speed-controls a .fa-caret-square-o-down {
+  color: #ed6410;
+}
+/* line 94, ../sass/base/_custom.scss */
+#controls #speed-controls a .fa-caret-square-o-down:hover {
+  color: #d0580e;
+}
+/* line 100, ../sass/base/_custom.scss */
+#controls #speed-controls a, #controls #speed-controls label {
+  width: 100px;
+  margin: 0 auto;
+  display: block;
+  padding: 18px;
+}
+/* line 107, ../sass/base/_custom.scss */
+#controls #speed-controls label {
+  background-color: #dae5e8;
+  border-radius: 6px;
+}
+/* line 111, ../sass/base/_custom.scss */
+#controls #speed-controls label::after {
+  content: 'MM/Sec';
+  font-size: 12px;
+  color: #888888;
+  font-weight: 100;
+  display: block;
+}
+/* line 121, ../sass/base/_custom.scss */
+#controls #direction-controls {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  padding: 24px 0;
+}
+/* line 129, ../sass/base/_custom.scss */
+#controls #direction-controls #center-controls {
+  display: block;
+  width: 206px;
+  margin: 0 auto;
+  padding: 8px 0;
+}
+/* line 136, ../sass/base/_custom.scss */
+#controls #direction-controls #forward {
+  display: block;
+  width: 100px;
+  margin: 0 auto;
+}
+/* line 142, ../sass/base/_custom.scss */
+#controls #direction-controls #reverse {
+  display: block;
+  width: 100px;
+  margin: 0 auto;
+}
+/* line 148, ../sass/base/_custom.scss */
+#controls #direction-controls #left {
+  width: 100px;
+}
+/* line 152, ../sass/base/_custom.scss */
+#controls #direction-controls #right {
+  width: 100px;
+}
+
+/* line 158, ../sass/base/_custom.scss */
+.btn-default {
+  border: solid 2px #dae5e8;
+}
+/* line 161, ../sass/base/_custom.scss */
+.btn-default:hover {
+  background-color: #dae5e8;
+}

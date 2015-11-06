@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+    <servlet>
+        <servlet-name>com.boomi.remoteRobot.RemoteRobot RemoteRobotService</servlet-name>
+        <servlet-class>com.boomi.remoteRobot.server.RemoteRobotServiceImpl</servlet-class>
+        <init-param>
+            <param-name>server</param-name>
+            <param-value>10.0.0.1</param-value>
+        </init-param>
+        <init-param>
+            <param-name>port</param-name>
+            <param-value>9001</param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>com.boomi.remoteRobot.RemoteRobot RemoteRobotService</servlet-name>
+        <url-pattern>/RemoteRobot/RemoteRobotService</url-pattern>
+    </servlet-mapping>
+    <welcome-file-list>
+        <welcome-file>RemoteRobot.html</welcome-file>
+    </welcome-file-list>
+</web-app>

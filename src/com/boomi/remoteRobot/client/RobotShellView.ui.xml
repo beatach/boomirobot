@@ -1,0 +1,11 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+             xmlns:g='urn:import:com.google.gwt.user.client.ui'
+             xmlns:c='urn:import:com.boomi.remoteRobot.client'>
+
+    <g:HTMLPanel styleName="container-fluid">
+        <div class="video-container">
+            <g:Frame ui:field="kubiView" styleName="kubi_view"></g:Frame>
+        </div>
+        <c:Controls></c:Controls>
+    </g:HTMLPanel>
+</ui:UiBinder>

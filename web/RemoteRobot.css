@@ -1,0 +1,34 @@
+/** Add css rules here for your application. */
+
+h1 {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+body, td, a, div, .p {
+    font-family: arial, sans-serif
+}
+
+.main_view{
+    top:0px;
+    bottom:0px;
+    right:0px;
+    left:0px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.kubi_view{
+    width: 100%;
+    height: 50%;
+}
+
+.start_button{
+    position: absolute;
+    top:50px;
+    left: 50px;
+    width:100px;
+    height: 30px;
+}
